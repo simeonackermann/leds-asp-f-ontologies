@@ -1,0 +1,8 @@
+Class structure:
+
+* owl:Thing
+  * Building
+  * Level
+  * Space
+    * Vertical Passage
+      * Elevator
