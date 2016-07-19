@@ -1,0 +1,16 @@
+Structure:
+* building:Elevator
+
+* "Elevator"
+  * has "Cabine"
+    * has depth
+    * has width
+    * has height
+    * can carry weight
+    * has "ControlPanel"
+  * has "Door"
+    * has width
+    * has height
+  
+* "ControlPanel"
+  * highest located button (value in cm)
