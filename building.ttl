@@ -1,0 +1,205 @@
+@prefix : <https://github.com/AKSW/leds-asp-f-ontologies#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#accessible_from_floor
+
+:accessible_from_floor a owl:ObjectProperty ;
+	rdfs:domain :Building_Part ;
+	rdfs:range :Floor .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#accessible_through_entrance
+
+:accessible_through_entrance a owl:ObjectProperty ;
+	rdfs:domain :Building ;
+	rdfs:range :Entrance .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#contains_obstacle
+
+:contains_obstacle a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Building_Part ;
+	rdfs:range :Obstacle .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#has_building_part
+
+:has_building_part a owl:ObjectProperty ;
+	rdfs:domain :Building ;
+	rdfs:range :Building_Part .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#has_entrance_direction
+
+:has_entrance_direction a owl:ObjectProperty ;
+	rdfs:domain :Entrance ;
+	rdfs:range :Entrance_Direction .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#has_floor
+
+:has_floor a owl:ObjectProperty ;
+	rdfs:domain :Building ;
+	rdfs:range :Floor .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#has_location
+
+:has_location a owl:ObjectProperty ;
+	rdfs:domain :Building ;
+	rdfs:range :Location_Information .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#is_Entrance
+
+:is_Entrance a owl:ObjectProperty ;
+	rdfs:domain :Building_Part ;
+	rdfs:range :Entrance .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#is_connected_to
+
+:is_connected_to a owl:ObjectProperty ;
+	rdfs:domain :Building_Part ;
+	rdfs:range :Building_Part .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#is_point_of_interest
+
+:is_point_of_interest a owl:ObjectProperty ;
+	rdfs:domain :Building_Part ;
+	rdfs:range :Point_of_Interest .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Building
+
+:Building a owl:Class ;
+	rdfs:subClassOf :Space ;
+	rdfs:comment "A Building is a spacial instance that is artificial and made for human inhabitants. It's usually has a roof and speparated from the environment by walls and doors."@en ;
+	rdfs:label "Gebaeude"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Building_Part
+
+:Building_Part a owl:Class ;
+	rdfs:subClassOf :Space ;
+	rdfs:comment "A Building Part is a spatial sub unit of a building."@en ;
+	rdfs:label "Gebaeudeteil"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Door
+
+:Door a owl:Class ;
+	rdfs:subClassOf :Building_Part ;
+	rdfs:comment "A Door is a moveable object between spatial instances. It's generally used for blocking access to unauthorized persons. It may just isolate thermally, acustically or/and optically. It's movability is usually limited to rotation on hinges and wall and frame placement."@en ;
+	rdfs:label "Tuer"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Elevator
+
+:Elevator a owl:Class ;
+	rdfs:subClassOf :Building_Part ;
+	rdfs:comment "An Elevator is a shaft with a movable cabin to transport persons horizontally."@en ;
+	rdfs:label "Aufzug"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Entrance
+
+:Entrance a owl:Class ;
+	rdfs:comment "Entrance is a transition between a building interrior space and building outside space."@en ;
+	rdfs:label "Eingang"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Entrance_Direction
+
+:Entrance_Direction a owl:Class ;
+	rdfs:comment "Entrance Direction is an additional Information for an Entrance. It's the direction in which the entrance is supposed to be used."@en ;
+	rdfs:label "Zugangsrichtung"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Escalator
+
+:Escalator a owl:Class ;
+	rdfs:subClassOf :Building_Part ;
+	rdfs:comment "An Escalator is a transportation system for horizontal transit. It's usually used for transition between floors."@en ;
+	rdfs:label "Rolltreppe"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Floor
+
+:Floor a owl:Class ;
+	rdfs:subClassOf :Space ;
+	rdfs:comment "Floor is a story of a building. It's used to decribe a spatial layer which has mostly no vertical transitions."@en ;
+	rdfs:label "Etage"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Location_Information
+
+:Location_Information a owl:Class ;
+	rdfs:comment "Location is a information group for locating descriptions. E.g. coordinates, hight, address and so on."@en ;
+	rdfs:label "Standortinformationen"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Obstacle
+
+:Obstacle a owl:Class ;
+	rdfs:comment "Obstacle is a thing, void or situation that keeps a person or vehicle from unrestraint movement."@en ;
+	rdfs:label "Hindernis"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Point_of_Interest
+
+:Point_of_Interest a owl:Class ;
+	rdfs:comment "Point of Interest is an abstract location which is may be useful or interesting for a service or person."@en ;
+	rdfs:label "Interessensfokus"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Ramp
+
+:Ramp a owl:Class ;
+	rdfs:subClassOf :Building_Part ;
+	rdfs:comment "A Ramp, also called wheelchair ramp, is a plane that is angled to overcome verticale hight differences."@en ;
+	rdfs:label "Rampe"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Room
+
+:Room a owl:Class ;
+	rdfs:subClassOf :Building_Part ;
+	rdfs:comment "A Room is a spatial instance that is used for storing, living, working or waiting within. It's also a used for transitioning into other spaces."@en ;
+	rdfs:label "hausinterner Raum"@de .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#Space
+
+:Space a owl:Class ;
+	rdfs:comment "Sapce is everything that describes a spatial instance."@en ;
+	rdfs:label "Raum"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#bidirectional
+
+:bidirectional a owl:NamedIndividual .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#in
+
+:in a owl:NamedIndividual .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#out
+
+:out a owl:NamedIndividual .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies#out_(emergency_exit)
+
+<https://github.com/AKSW/leds-asp-f-ontologies#out_(emergency_exit)> a owl:NamedIndividual .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
