@@ -1,8 +1,13 @@
 Class structure:
 
 * owl:Thing
-  * Building
-  * Level
+  * Point of Interest
   * Space
-    * Vertical Passage
-      * Elevator
+    * Floor
+    * Building
+      * BuildingPart
+        * Elevator
+
+Notes:
+- current class structure visualized in leds-building-ontology.png
+- changed class structure to less navigation orientated structure (removed horizontal passage)
