@@ -10,9 +10,13 @@ We are working on the following ontologies. Each one is considered a so called d
 
 This ontology describes buildings, usually structures which contain at least two rooms and a roof. We wanted to keep it simple, but the main focus lies on architectural facts.
 
+[Go to overview](https://github.com/AKSW/leds-asp-f-ontologies/tree/master/ontologies/building)
+
 ### Elevator ontology
 
 This ontology describes elevators inside or outside a building.
+
+[Go to overview](https://github.com/AKSW/leds-asp-f-ontologies/tree/master/ontologies/elevator)
 
 ## License
 
