@@ -15,6 +15,12 @@
 # #################################################################
 # 
 # 
+# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#hasElevator
+
+:hasElevator a owl:ObjectProperty ;
+	rdfs:domain :Building ;
+	rdfs:range :Elevator .
+# 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#hasElevatorCabine
 
 :hasElevatorCabine a owl:ObjectProperty ;
@@ -70,10 +76,10 @@
 	rdfs:domain :Elevator ;
 	rdfs:range xsd:float .
 # 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#maxiumLoad
+# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#maximumLoad
 
-:maxiumLoad a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
+:maximumLoad a owl:DatatypeProperty ;
+	rdfs:domain :Elevator .
 # 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#width
 
@@ -89,9 +95,9 @@
 # #################################################################
 # 
 # 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#ControlPanel
+# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#Building
 
-:ControlPanel a owl:Class .
+:Building a owl:Class .
 # 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#Elevator
 
