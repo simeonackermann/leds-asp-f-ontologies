@@ -11,15 +11,3 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 ![](illustration.png)
 
 ## Notes
-
-(**TODO**: Can the following be removed?)
-
-Class structure:
-
-* owl:Thing
-  * Point of Interest
-  * Space
-    * Floor
-    * Building
-      * BuildingPart
-        * Elevator
