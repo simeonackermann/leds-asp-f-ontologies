@@ -8,6 +8,6 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 
 ## Illustration
 
-![](diagram.png)
+![](diagram.svg)
 
 ## Notes
