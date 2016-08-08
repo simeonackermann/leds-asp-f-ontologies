@@ -8,6 +8,6 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 
 ## Illustration
 
-![](diagram.svg)
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/building/diagram.svg)
 
 ## Notes
