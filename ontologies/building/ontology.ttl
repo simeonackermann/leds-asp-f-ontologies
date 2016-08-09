@@ -68,12 +68,12 @@
 # http://www.w3.org/2003/01/geo/lat
 
 <http://www.w3.org/2003/01/geo/lat> a owl:DatatypeProperty ;
-	rdfs:label "Latitude (WSG84)" .
+	rdfs:label "Latitude (WGS 84)" .
 # 
 # http://www.w3.org/2003/01/geo/long
 
 <http://www.w3.org/2003/01/geo/long> a owl:DatatypeProperty ;
-	rdfs:label "Longitude (WSG84)" .
+	rdfs:label "Longitude (WGS 84)" .
 # 
 # 
 # 
