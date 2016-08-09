@@ -36,3 +36,6 @@ A passage is a structure that connects physical room resp. buildings.
 
 (Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur.)
 A wall is a stracture that is going out from the ground and mostly impermeable.
+
+### barrier
+Barriere is a mostly impermeable structure that is preventing something from passing without separating a pyhsical room in multiple pyhsical rooms.
