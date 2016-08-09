@@ -44,12 +44,14 @@ The following main terms are the basement for further concepts of the building o
 * English: `A barrier is a mostly impermeable structure, which is preventing someone from passing, without separating a physical room in multiple physical rooms.`
 * German: `Eine Barriere ist eine größtenteils undurchdringliche Struktur, welche jemanden am passieren hindert, ohne einen physischen Raum in mehrere physische Räume zu unterteilen.`
 
+### Wall (German: `Wand`)
 
-### wall (Wand)
+* English: `A wall is a structure which starts from the floor and is mostly impermeable.`
 
-(Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur.)
+* German: `Eine Wand ist eine vom Boden ausgehende, größtenteils undurchlässige, Struktur.`
 
-A wall is a stracture that is going out from the ground and mostly impermeable.
+### Barrier (German: `Barriere`)
 
-### barrier
-Barriere is a mostly impermeable structure that is preventing something from passing without separating a pyhsical room in multiple pyhsical rooms.
+* English: `Barrier is a mostly impermeable structure that is preventing someone from passing without separating a physical room in multiple physical rooms.`
+
+* German: `Eine Barriere ist eine größtenteils undurchlässige Struktur, welche jemanden am passieren hindert, ohne dabei einen physischen Raum in mehrere physische Räume zu unterteilen.`
