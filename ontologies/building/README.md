@@ -10,29 +10,39 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 
 ![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/building/diagram.svg)
 
-## Main terms (TODO: check english translation for correctness)
+## Main terms
 
-### building (Gebäude)
+The following main terms are the basement for further concepts of the building ontology.
 
-(Eine Menge von physischen Räumen.)
+### Building (German: `Gebäude`)
 
-A set of physical rooms.
+* English: `A set which contains at least one physical room.`
+* German: `Ein Gebäude ist eine Menge, welche mindestens einen physischen Raum enthält.`
 
-### physical room (Physischer Raum)
-("Physischer" Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände, Durchgänge und Barrieren.)
+### Physical room (German: `Physischer Raum`)
 
-"physical" room is a 3D area that is limited by walls, passages and barriers.
+* English: `A physical room is an 3D area which is limited by one or more walls, passages and barriers.`
+* German: `Ein physischer Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände, Durchgänge und Barrieren.`
 
-### passage (Durchgang)
+### Passage (German: `Durchgang`)
 
-(Ein Durchgang ist eine Struktur, welche physische Räume bzw. Gebäude verbindet.)
+* English: `A passage is a structure that connects physical room resp. buildings.`
+* German: `Ein Durchgang ist eine Struktur, welche physische Räume bzw. Gebäude verbindet.`
 
-A passage is a structure that connects physical room resp. buildings.
+#### Passage types
 
-#### types (Typen)
+- Wall passage (German: `Wanddurchgang`)
+- Building passage (German: `Gebäudedurchgang`) - E.g. the "Technisches Rauthaus" in Leipzig which contains of 3 buildings which are connected via a passage (Haus A => B and B => C).
 
-- wall passage (Wanddurchgang) 
-- building passage (Gebäudedurchgang)
+### Wall (German: `Wand`)
+
+* English: `A wall is a structure, which is going out from the ground and is mostly impermeable.`
+* German: `Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur.`
+
+### Barrier (German: `Barriere`)
+
+* English: `A barrier is a mostly impermeable structure, which is preventing someone from passing, without separating a physical room in multiple physical rooms.`
+* German: `Eine Barriere ist eine größtenteils undurchdringliche Struktur, welche jemanden am passieren hindert, ohne einen physischen Raum in mehrere physische Räume zu unterteilen.`
 
 
 ### wall (Wand)
