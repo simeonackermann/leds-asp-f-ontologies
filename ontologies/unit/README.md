@@ -5,8 +5,8 @@ This ontology is based on [http://www.w3.org/2007/ont/unit](http://www.w3.org/20
 In a nutshell: You can use this ontology to express values with their according unit. E.g. you want to express the width of a door, you can use the following triples:
 
 ```
-:door   :length   _:a.
-_a:     unit:m      2.
+:door   :width   _:w.
+_w:     unit:m   0.9.
 ```
 
 ## Changes in comparison to the original version
