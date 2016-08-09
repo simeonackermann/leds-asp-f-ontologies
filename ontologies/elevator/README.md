@@ -8,4 +8,4 @@ The purpose of this ontology is to act as basement for further ontology developm
 
 The following diagram illustrates the structure of classes and related properties.
 
-![](diagram.png)
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/diagram.svg)
