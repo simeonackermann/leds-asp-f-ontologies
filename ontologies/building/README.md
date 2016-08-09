@@ -10,28 +10,29 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 
 ![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/building/diagram.svg)
 
-## Main terms (TODO: translate to english)
+## Main terms (TODO: check english translation for correctness, reconsider the term "physical room")
 
-### Gebäude
+### building (Gebäude)
 
-Eine Menge von physischen Räumen.
+(Eine Menge von physischen Räumen.)
+A set of physical rooms.
+
+### physical room (Physischer Raum)
+("Physischer" Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände und Durchgänge.)
+"physical" room is a 3D area that is limited by walls and passages.
+
+### passage (Durchgang)
+
+(Ein Durchgang ist eine Struktur, welche physische Räume bzw. Gebäude verbindet.)
+A passage is a structure that connects physical room resp. buildings.
+
+#### types (Typen)
+
+- wall passage (Wanddurchgang) 
+- building passage (Gebäudedurchgang) - (z.B. tech. Rathaus von Haus A zu Haus B) (e.g. tech. Rathaus transition between house A and B
 
 
-### Physischer Raum
+### wall (Wand)
 
-"Physischer" Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände, Durchgänge und Barrieren.
-
-
-### Durchgang
-
-Ein Durchgang ist eine Struktur, welche physische Räume bzw. Gebäude verbindet.
-
-#### Typen
-
-- Wanddurchgang
-- Gebäudedurchgang (z.B. tech. Rathaus von Haus A zu Haus B)
-
-
-### Wand
-
-Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur.
+(Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur.)
+A wall is a stracture that is going out from the ground and mostly impermeable.
