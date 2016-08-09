@@ -32,7 +32,12 @@ The following main terms are the basement for further concepts of the building o
 #### Passage types
 
 - Wall passage (German: `Wanddurchgang`)
-- Building passage (German: `Gebäudedurchgang`) - E.g. the "Technisches Rauthaus" in Leipzig which contains of 3 buildings which are connected via a passage (Haus A => B and B => C).
+  - English: `A wall passage is located inside a wall and connects two physical rooms or a physical room with the outerworld.`
+  - German: `Ein Wanddurchgang befindet sich in einer Wand und verbindet entweder zwei physische Räume oder einen physischen Raum mit der Außenwelt.`
+- Building passage (German: `Gebäudedurchgang`)
+  - *E.g. the "Technisches Rauthaus" in Leipzig which contains of 3 buildings which are connected via a passage (Haus A => B and B => C).*
+  - English: `A building passage connects two buildings or a building with the outerworld.`
+  - German: `Ein Gebäudedurchgang verbindet ein Gebäude mit einem anderen oder ein Gebäude mit der Außenwelt.`
 
 ### Wall (German: `Wand`)
 
