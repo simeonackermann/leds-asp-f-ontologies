@@ -10,7 +10,7 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 
 ![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/building/diagram.svg)
 
-## Main terms (TODO: check english translation for correctness, reconsider the term "physical room")
+## Main terms (TODO: check english translation for correctness, defining barrier)
 
 ### building (Gebäude)
 
@@ -18,8 +18,8 @@ The building ontology is inspired and based on ideas of M. Goetz and A. Zipf (Re
 A set of physical rooms.
 
 ### physical room (Physischer Raum)
-("Physischer" Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände und Durchgänge.)
-"physical" room is a 3D area that is limited by walls and passages.
+("Physischer" Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände, Durchgänge und Barrieren.)
+"physical" room is a 3D area that is limited by walls, passages and barriers.
 
 ### passage (Durchgang)
 
