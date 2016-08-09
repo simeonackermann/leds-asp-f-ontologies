@@ -1,11 +1,11 @@
-@prefix : <https://github.com/AKSW/leds-asp-f-ontologies/building#> .
+@prefix : <https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://github.com/AKSW/leds-asp-f-ontologies/building> a owl:Ontology ;
+<https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl> a owl:Ontology ;
 	rdfs:comment "Ontology for structual modelling of buildings."@en .
 # 
 # 
@@ -16,76 +16,25 @@
 # #################################################################
 # 
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#accessible_from_floor
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#hasBarrier
 
-:accessible_from_floor a owl:ObjectProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range :Floor .
+:hasBarrier a owl:ObjectProperty ;
+	rdfs:range :Barrier .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#accessible_through_entrance
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#hasPassage
 
-:accessible_through_entrance a owl:ObjectProperty ;
-	rdfs:domain :Building ;
-	rdfs:range :Entrance .
+:hasPassage a owl:ObjectProperty ;
+	rdfs:range :Passage .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#contains_building_part
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#hasPhysicalRoom
 
-:contains_building_part a owl:ObjectProperty ;
-	rdfs:domain :Building_Segment ;
-	rdfs:range :Building_Part ;
-	owl:propertyDisjointWith :is_connected_to ;
-	rdfs:comment "contains_building_part exists to model logical separations of buildings, e.g. something like section or everything that is reachable from one house entrance."@en .
+:hasPhysicalRoom a owl:ObjectProperty ;
+	rdfs:range :PhysicalRoom .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#contains_obstacle
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#hasWall
 
-:contains_obstacle a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range :Obstacle .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#has_building_part
-
-:has_building_part a owl:ObjectProperty ;
-	rdfs:domain :Building ;
-	rdfs:range :Building_Part .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#has_entrance_direction
-
-:has_entrance_direction a owl:ObjectProperty ;
-	rdfs:domain :Entrance ;
-	rdfs:range :Entrance_Direction .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#has_floor
-
-:has_floor a owl:ObjectProperty ;
-	rdfs:domain :Building ;
-	rdfs:range :Floor .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#has_location
-
-:has_location a owl:ObjectProperty ;
-	rdfs:domain :Building ;
-	rdfs:range :Location_Information .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#is_Entrance
-
-:is_Entrance a owl:ObjectProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range :Entrance .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#is_connected_to
-
-:is_connected_to a owl:ObjectProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range :Building_Part ;
-	rdfs:comment """is_connected_to is used for building parts are structurally and logically connected. two rooms are connected to each other if there is a direct way between them, something like a door. If the door itself is modelled this connection is from room to door to room. rooms aren't connected by this relation if they are neighboring without a walkable path between them, like when sharing a common wall.
-It's disjount with contains_building_part."""@en .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#is_point_of_interest
-
-:is_point_of_interest a owl:ObjectProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range :Point_of_Interest .
+:hasWall a owl:ObjectProperty ;
+	rdfs:range :Wall .
 # 
 # 
 # 
@@ -96,46 +45,35 @@ It's disjount with contains_building_part."""@en .
 # #################################################################
 # 
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#building_label
+# http://purl.org/dc/elements/1.1/title
 
-:building_label a owl:DatatypeProperty ;
-	rdfs:domain :Building ;
-	rdfs:range xsd:string .
+<http://purl.org/dc/elements/1.1/title> a owl:DatatypeProperty ;
+	rdfs:label "Titel"@de , "Title"@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#building_part_type
+# http://schema.org/addressLocality
 
-:building_part_type a owl:DatatypeProperty ;
-	rdfs:domain :Building_Part ;
-	rdfs:range xsd:string .
+<http://schema.org/addressLocality> a owl:DatatypeProperty ;
+	rdfs:label "City"@en , "Stadt"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#building_segment_label
+# http://schema.org/postalCode
 
-:building_segment_label a owl:DatatypeProperty ;
-	rdfs:domain :Building_Segment ;
-	rdfs:range xsd:string .
+<http://schema.org/postalCode> a owl:DatatypeProperty ;
+	rdfs:label "Postal code"@en , "Postleitzahl"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#door_label
+# http://schema.org/streetAddress
 
-:door_label a owl:DatatypeProperty ;
-	rdfs:domain :Door ;
-	rdfs:range xsd:string .
+<http://schema.org/streetAddress> a owl:DatatypeProperty ;
+	rdfs:label "Straße (Adressbestandteil)"@de , "Street part of an address"@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#floor_label
+# http://www.w3.org/2003/01/geo/lat
 
-:floor_label a owl:DatatypeProperty ;
-	rdfs:domain :Floor ;
-	rdfs:range xsd:string .
+<http://www.w3.org/2003/01/geo/lat> a owl:DatatypeProperty ;
+	rdfs:label "Latitude (WSG84)" .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#room_area
+# http://www.w3.org/2003/01/geo/long
 
-:room_area a owl:DatatypeProperty ;
-	rdfs:domain :Space .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#space_area
-
-:space_area a owl:DatatypeProperty ;
-	rdfs:domain :Space ;
-	rdfs:range xsd:double .
+<http://www.w3.org/2003/01/geo/long> a owl:DatatypeProperty ;
+	rdfs:label "Longitude (WSG84)" .
 # 
 # 
 # 
@@ -146,118 +84,49 @@ It's disjount with contains_building_part."""@en .
 # #################################################################
 # 
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Balcony
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#Barrier
 
-:Balcony a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Balcony is a structural element that is above groundlevel and sticks out of the building."@en ;
-	rdfs:label "Balkon"@de .
+:Barrier a owl:Class ;
+	rdfs:comment "Barrier is a mostly impermeable structure that is preventing someone from passing without separating a physical room in multiple physical rooms."@en , "Eine Barriere ist eine größtenteils undurchlässige Struktur, welche jemanden am passieren hindert, ohne dabei einen physischen Raum in mehrere physische Räume zu unterteilen."@de ;
+	rdfs:label "Barrier"@en , "Barriere"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Building
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#Building
 
 :Building a owl:Class ;
-	rdfs:subClassOf :Space ;
-	rdfs:comment "A Building is a spacial instance that is artificial and made for human inhabitants. It's usually has a roof and speparated from the environment by walls and doors."@en ;
-	rdfs:label "Gebaeude"@de .
+	rdfs:comment "A building is a set which contains at least one physical room."@en , "Ein Gebäude ist eine Menge, welche mindestens einen physischen Raum enthält."@de ;
+	rdfs:label "Building"@en , "Gebäude"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Building_Part
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#BuildingPassage
 
-:Building_Part a owl:Class ;
-	rdfs:subClassOf :Space ;
-	rdfs:comment "A Building Part is a spatial sub unit of a building."@en ;
-	rdfs:label "Gebaeudeteil"@de .
+:BuildingPassage a owl:Class ;
+	rdfs:subClassOf :Passage ;
+	rdfs:comment "A building passage connects two buildings or a building with the outerworld."@de , "Ein Gebäudedurchgang verbindet ein Gebäude mit einem anderen oder ein Gebäude mit der Außenwelt."@de ;
+	rdfs:label "Building Passage"@en , "Gebäudedurchgang"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Building_Segment
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#Passage
 
-:Building_Segment a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Building_Segment is a substructure of a Building which is usually bigger than a Building_Part. It can contain Building_Parts but it's not an independent Building, for example a wing of a building."@en ;
-	rdfs:label "Gebäudesegment"@de .
+:Passage a owl:Class ;
+	rdfs:comment "A passage is a structure that connects physical room respectively buildings."@en , "Ein Durchgang ist eine Struktur, welche physische Räume bzw. Gebäude verbindet."@de ;
+	rdfs:label "Durchgang"@de , "Passage"@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Door
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#PhysicalRoom
 
-:Door a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Door is a moveable object between spatial instances. It's generally used for blocking access to unauthorized persons. It may just isolate thermally, acustically or/and optically. It's movability is usually limited to rotation on hinges and wall and frame placement."@en ;
-	rdfs:label "Tuer"@de .
+:PhysicalRoom a owl:Class ;
+	rdfs:comment "A physical room is an 3D area which is limited by one or more walls, passages and barriers."@en , "Ein physischer Raum ist ein 3D-Bereich, welcher begrenzt wird durch Wände, Durchgänge und Barrieren."@de ;
+	rdfs:label "Physical Room"@en , "Physischer Raum"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Elevator
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#Wall
 
-:Elevator a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "An Elevator is a shaft with a movable cabin to transport persons horizontally."@en ;
-	rdfs:label "Aufzug"@de .
+:Wall a owl:Class ;
+	rdfs:comment "A wall is a structure, which is going out from the ground and is mostly impermeable."@en , "Eine Wand eine vom Boden ausgehende größtenteils undurchlässige Struktur."@de ;
+	rdfs:label "Wall"@en , "Wand"@de .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Entrance
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#WallPassage
 
-:Entrance a owl:Class ;
-	rdfs:comment "Entrance is a transition between a building interrior space and building outside space."@en ;
-	rdfs:label "Eingang"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Entrance_Direction
-
-:Entrance_Direction a owl:Class ;
-	rdfs:comment "Entrance Direction is an additional Information for an Entrance. It's the direction in which the entrance is supposed to be used."@en ;
-	rdfs:label "Zugangsrichtung"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Escalator
-
-:Escalator a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "An Escalator is a transportation system for horizontal transit. It's usually used for transition between floors."@en ;
-	rdfs:label "Rolltreppe"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Floor
-
-:Floor a owl:Class ;
-	rdfs:subClassOf :Space ;
-	rdfs:comment "Floor is a story of a building. It's used to decribe a spatial layer which has mostly no vertical transitions."@en ;
-	rdfs:label "Etage"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Location_Information
-
-:Location_Information a owl:Class ;
-	rdfs:comment "Location is a information group for locating descriptions. E.g. coordinates, hight, address and so on."@en ;
-	rdfs:label "Standortinformationen"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Obstacle
-
-:Obstacle a owl:Class ;
-	rdfs:comment "Obstacle is a thing, void or situation that keeps a person or vehicle from unrestraint movement."@en ;
-	rdfs:label "Hindernis"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Point_of_Interest
-
-:Point_of_Interest a owl:Class ;
-	rdfs:comment "Point of Interest is an abstract location which is may be useful or interesting for a service or person."@en ;
-	rdfs:label "Interessensfokus"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Ramp
-
-:Ramp a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Ramp, also called wheelchair ramp, is a plane that is angled to overcome verticale hight differences."@en ;
-	rdfs:label "Rampe"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Room
-
-:Room a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Room is a spatial instance that is used for storing, living, working or waiting within. It's also a used for transitioning into other spaces."@en ;
-	rdfs:label "hausinterner Raum"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Space
-
-:Space a owl:Class ;
-	rdfs:comment "Sapce is everything that describes a spatial instance."@en ;
-	rdfs:label "Raum"@de .
-# 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#Stairway
-
-:Stairway a owl:Class ;
-	rdfs:subClassOf :Building_Part ;
-	rdfs:comment "A Stairwary is a flight of steps to transit between Floors."@en ;
-	rdfs:label "Treppe"@en .
+:WallPassage a owl:Class ;
+	rdfs:subClassOf :Passage ;
+	rdfs:comment "A wall passage is located inside a wall and connects two physical rooms or a physical room with the outerworld."@en , "Ein Wanddurchgang befindet sich in einer Wand und verbindet entweder zwei physische Räume oder einen physischen Raum mit der Außenwelt."@de ;
+	rdfs:label "Wall Passage"@en , "Wanddurchgang"@de .
 # 
 # 
 # 
@@ -268,24 +137,24 @@ It's disjount with contains_building_part."""@en .
 # #################################################################
 # 
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#bidirectional
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#bidirectional
 
-:bidirectional a owl:NamedIndividual , :Entrance_Direction ;
+:bidirectional a owl:NamedIndividual ;
 	rdfs:comment "bidirectional makes an entrance usable for entering and exiting a building. If no further information is given bidirectional should be used as default direction."@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#emergency_exit
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#emergency_exit
 
-:emergency_exit a owl:NamedIndividual , :Entrance_Direction ;
+:emergency_exit a owl:NamedIndividual ;
 	rdfs:comment "Emergency exit is an exit that is only to be used in case of emergency. Sometimes emergency exits fire the alaram when used."@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#in
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#in
 
-:in a owl:NamedIndividual , :Entrance_Direction ;
+:in a owl:NamedIndividual ;
 	rdfs:comment "in marks an entrance as entrance which can't be used as an exit."@en .
 # 
-# https://github.com/AKSW/leds-asp-f-ontologies/building#out
+# https://github.com/AKSW/leds-asp-f-ontologies/raw/master/ontologies/building/ontology.ttl#out
 
-:out a owl:NamedIndividual , :Entrance_Direction ;
+:out a owl:NamedIndividual ;
 	rdfs:comment "out is an entrance direction that marks an entrance as exit only."@en .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
