@@ -48,35 +48,13 @@
 # #################################################################
 # 
 # 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#depth
-
-:depth a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
-# 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#height
-
-:height a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
-# 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#highestHeightOfControlPanelButton
 
-:highestHeightOfControlPanelButton a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
+:highestHeightOfControlPanelButton a owl:DatatypeProperty .
 # 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#highestHeightOfControlPanelButtonBeforeCabine
 
-:highestHeightOfControlPanelButtonBeforeCabine a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
-# 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#maximumLoad
-
-:maximumLoad a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
-# 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#width
-
-:width a owl:DatatypeProperty ;
-	rdfs:range xsd:float .
+:highestHeightOfControlPanelButtonBeforeCabine a owl:DatatypeProperty .
 # 
 # 
 # 
