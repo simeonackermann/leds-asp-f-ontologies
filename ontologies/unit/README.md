@@ -1,21 +1,15 @@
 # Unit ontology
 
-This ontology is based on [http://www.w3.org/2007/ont/unit](http://www.w3.org/2007/ont/unit) (creator Tim Berners-Lee) and was adapted by us. We fixed small stuff, e.g. labeling errors.
+Currently no ontology available. Try again later.
 
-In a nutshell: You can use this ontology to express values with their according unit. E.g. you want to express the width of a door, you can use the following triples:
+## drafts
 
-```
-:door   :width   _:w.
-_w:     unit:m   0.9.
-```
-
-## Changes in comparison to the original version
-
-* Changed label of unit:W from `N` to `W`
-* Removed lines breaks and obsolete whitespaces from descriptions
+There are currently four different drafts for unit ontologies, three simpler ones and one with a little more complex structure. They are displayed below. An interesting fifth option would the the combination of the second and third simpler version combined with the individual creation of the complexer draft.
 
 ## Illustration
 
 The following diagram illustrates the structure of classes and related properties.
 
-![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/diagram.svg)
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/structure.png)
+
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/simpler versions.png)
