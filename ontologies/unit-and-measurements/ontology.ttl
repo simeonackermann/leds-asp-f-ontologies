@@ -103,7 +103,7 @@
 :W a owl:DatatypeProperty ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The number of Watts in this power." ;
-	rdfs:label "N" .
+	rdfs:label "W" .
 # 
 # https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/unit-and-measurements/ontology.ttl#hz
 
