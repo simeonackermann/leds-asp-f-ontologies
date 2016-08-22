@@ -44,6 +44,13 @@ This ontology describes buildings based on the [FAMOS](http://www.kesslersolutio
 
 [Go to overview](https://github.com/AKSW/leds-asp-f-ontologies/tree/master/ontologies/famos)
 
+## Conventions
+
+* URIs in ontologies: camel case, first letter is up
+* class names: camel case, first letter is up
+* properties: camel case
+  * no distinction between object and datatype properties concerning the names
+
 ## License
 
 We didn't decide the license yet, so if you consider using these ontologies, ask us and we find a solution.
