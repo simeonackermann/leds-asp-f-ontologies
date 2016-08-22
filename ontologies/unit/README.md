@@ -2,14 +2,20 @@
 
 Currently no ontology available. Try again later.
 
-## drafts
+## versions
 
-There are currently four different drafts for unit ontologies, three simpler ones and one with a little more complex structure. They are displayed below. An interesting fifth option would the the combination of the second and third simpler version combined with the individual creation of the complexer draft.
+There are currently two versions the unit ontology. A simple one and a little more complex one that adopts an ontology that is used on BioPortal.
 
 ## Illustration
+simple version:
 
-The following diagram illustrates the structure of classes and related properties.
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/simple version.svg)
 
-![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/structure.png)
+complexer version:
 
-![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/simpler versions.png)
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/complexer version.svg)
+
+usecase of complexer version:
+
+* usecase is in lower part of the picture, upper part is just the "normal" ontology
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/usecase complexer version.svg)
