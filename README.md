@@ -10,12 +10,12 @@ We use ontology and vocabulary as synonyms and no distinction is made between. T
 
 There is also an interesting discussion on [stackoverflow](http://stackoverflow.com/questions/20200270/ontology-vs-vocabulary).
 
-## Requirements for ontologies/vocabularies
+## Requirements for ontologies
 
 Our use case is located in **Open Data** and **Open Govermnent** and characterized by the following parameter:
 * Broad spectrum of people using and participating
 * Education/qualification of the people differs: technicans, domain experts, ontologists, end-users. Groups are not distinct and may overlap.
-* Broad spectrum of domains, which need to be integrated. We want to create an ontological foundation for basic / mainstream use cases, which means, that each ontology/vocabulary is more like a set of modules which can be used differently in different use cases.
+* Broad spectrum of domains, which need to be integrated. We want to create an ontological foundation for basic / mainstream use cases, which means, that each ontology is more like a set of modules which can be used differently in different use cases.
 
 Therefore we have the following requirements for the ontologies we create or use:
 * **Easy to understand** - We know, its a buzz-phrase. An ontology should provide a documentation, containing an explanation about the essence/main idea of the ontology. Classes and properties of the ontology should named according to the main idea. Avoid not common abstract concepts or terms or describe them clearly.
@@ -37,6 +37,12 @@ This ontology describes buildings, usually structures which contain at least two
 This ontology describes elevators inside or outside a building.
 
 [Go to overview](https://github.com/AKSW/leds-asp-f-ontologies/tree/master/ontologies/elevator)
+
+### FAMOS ontology
+
+This ontology describes buildings based on the [FAMOS](http://www.kesslersolutions.de/cafm-loesung/cafm-software-famos.html) software. It references the building ontology to allow later interconnections.
+
+[Go to overview](https://github.com/AKSW/leds-asp-f-ontologies/tree/master/ontologies/famos)
 
 ## License
 
