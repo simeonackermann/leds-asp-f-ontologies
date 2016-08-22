@@ -14,12 +14,6 @@
 # #
 # #################################################################
 # 
-# 
-# https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#consistsOf
-
-:consistsOf a owl:ObjectProperty ;
-	rdfs:label "consists of"@en .
-# 
 # https://raw.githubusercontent.com/AKSW/leds-asp-f-ontologies/master/ontologies/elevator/ontology.ttl#hasControlPanel
 
 :hasControlPanel a owl:ObjectProperty ;
