@@ -16,9 +16,7 @@
 # #################################################################
 # 
 # 
-# http://creativecommons.org/ns#licence
 
-<http://creativecommons.org/ns#licence> a owl:AnnotationProperty .
 # 
 # 
 # 
