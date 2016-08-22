@@ -1,21 +1,24 @@
 # Unit ontology
 
-This ontology is based on [http://www.w3.org/2007/ont/unit](http://www.w3.org/2007/ont/unit) (creator Tim Berners-Lee) and was adapted by us. We fixed small stuff, e.g. labeling errors. Read this [paper](http://www.semantic-web-journal.net/sites/default/files/swj177_7.pdf) for a detailed overview about the purpose of the ontology.
+1. simple unit.ttl
+2. test-measurement.ttl, test-unit.ttl, test-quantity.ttl
 
-In a nutshell: You can use this ontology to express values with their according unit. E.g. you want to express the width of a door, you can use the following triples:
+## versions
 
-```
-:door   :width   _:w.
-_w:     unit:m   0.9.
-```
+There are currently two versions the unit ontology. A simple one and a little more complex one that adopts an ontology that is used on BioPortal. 
+Both versions are easy to use. The simpler version is uses unit as DatatypeProperties. The complexer version categorizes the measures and uses an quantity object to connect the value and the unit. Units are given seperatly. 
 
-## Changes in comparison to the original version
-
-* Changed label of unit:W from `N` to `W`
-* Removed lines breaks and obsolete whitespaces from descriptions
 
 ## Illustration
+simple version:
 
-The following diagram illustrates the structure of classes and related properties.
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/simple version.svg)
 
-![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/diagram.svg)
+complexer version:
+
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/complexer version.svg)
+
+usecase of complexer version:
+
+* usecase is in lower part of the picture, upper part is just the "normal" ontology
+![](https://rawgit.com/AKSW/leds-asp-f-ontologies/master/ontologies/unit/usecase complexer version.svg)

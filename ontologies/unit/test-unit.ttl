@@ -1,0 +1,568 @@
+@prefix : <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#SI_prefix
+
+:SI_prefix a owl:Class ;
+	rdfs:subClassOf :prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#acceleration_unit
+
+:acceleration_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#amount_per_container
+
+:amount_per_container a owl:Class ;
+	rdfs:subClassOf :concentration_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#angle_unit
+
+:angle_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#angular_acceleration_unit
+
+:angular_acceleration_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#angular_velocity_unit
+
+:angular_velocity_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#area_unit
+
+:area_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#base_unit
+
+:base_unit a owl:Class ;
+	rdfs:subClassOf :unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#catalytic_activity_unit
+
+:catalytic_activity_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#catalytic_concentration_unit
+
+:catalytic_concentration_unit a owl:Class ;
+	rdfs:subClassOf :concentration_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#concentration_unit
+
+:concentration_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#conduction_unit
+
+:conduction_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#density_unit
+
+:density_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#dimensionless_unit
+
+:dimensionless_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#electric_field_strength_unit
+
+:electric_field_strength_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#electric_potential_difference_unit
+
+:electric_potential_difference_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#eletric_current_unit
+
+:eletric_current_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#energy_unit
+
+:energy_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#force_unit
+
+:force_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#frequency_unit
+
+:frequency_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#information_unit
+
+:information_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#length_unit
+
+:length_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#light_unit
+
+:light_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#magnetic_flux_density_unit
+
+:magnetic_flux_density_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#magnetic_flux_unit
+
+:magnetic_flux_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#mass_unit
+
+:mass_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#measurement_related_unit
+
+:measurement_related_unit a owl:Class ;
+	rdfs:subClassOf :unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#molar_mass_unit
+
+:molar_mass_unit a owl:Class ;
+	rdfs:subClassOf :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#momentum_unit
+
+:momentum_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#plane_angle_unit
+
+:plane_angle_unit a owl:Class ;
+	rdfs:subClassOf :angle_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#power_unit
+
+:power_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#prefix
+
+:prefix a owl:Class .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#pressure_unit
+
+:pressure_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#radiation_unit
+
+:radiation_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#rate_unit
+
+:rate_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#rotation_frequency_unit
+
+:rotation_frequency_unit a owl:Class ;
+	rdfs:subClassOf :frequency_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#solid_angle_unit
+
+:solid_angle_unit a owl:Class ;
+	rdfs:subClassOf :angle_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#speed_velocity_unit
+
+:speed_velocity_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#substance_unit
+
+:substance_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#surface_tension_unit
+
+:surface_tension_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#temperature_unit
+
+:temperature_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#time_unit
+
+:time_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#turbidity_unit
+
+:turbidity_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#unit
+
+:unit a owl:Class .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#viscosity_unit
+
+:viscosity_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#volume_unit
+
+:volume_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#volumentric_flow_rate_unit
+
+:volumentric_flow_rate_unit a owl:Class ;
+	rdfs:subClassOf :measurement_related_unit .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#ampere
+
+:ampere a owl:NamedIndividual , :base_unit , :eletric_current_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#bit
+
+:bit a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#byte
+
+:byte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#centi
+
+:centi a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#centimeter
+
+:centimeter a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#century
+
+:century a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#cubic_centimeter
+
+:cubic_centimeter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#cubic_deciliter
+
+:cubic_deciliter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#cubic_decimeter
+
+:cubic_decimeter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#cubic_meter
+
+:cubic_meter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#dalton
+
+:dalton a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#day
+
+:day a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#deciliter
+
+:deciliter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#degree
+
+:degree a owl:NamedIndividual , :plane_angle_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#enzyme_unit
+
+:enzyme_unit a owl:NamedIndividual , :catalytic_activity_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#femto
+
+:femto a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#femtogram
+
+:femtogram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#femtosecond
+
+:femtosecond a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#gibibyte
+
+:gibibyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#giga
+
+:giga a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#gigabyte
+
+:gigabyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#gigahertz
+
+:gigahertz a owl:NamedIndividual , :frequency_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#gram
+
+:gram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#gram_per_mole
+
+:gram_per_mole a owl:NamedIndividual , :molar_mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#hectare
+
+:hectare a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#hertz
+
+:hertz a owl:NamedIndividual , :frequency_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#hour
+
+:hour a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#katal
+
+:katal a owl:NamedIndividual , :catalytic_activity_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kelvin
+
+:kelvin a owl:NamedIndividual , :base_unit , :temperature_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kibibyte
+
+:kibibyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kilo
+
+:kilo a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kilobyte
+
+:kilobyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kilodalton
+
+:kilodalton a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kilogram
+
+:kilogram a owl:NamedIndividual , :base_unit , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#kilometer
+
+:kilometer a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#liter
+
+:liter a owl:NamedIndividual , :volume_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#mebibyte
+
+:mebibyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#mega
+
+:mega a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#megabyte
+
+:megabyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#megahertz
+
+:megahertz a owl:NamedIndividual , :frequency_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#meter
+
+:meter a owl:NamedIndividual , :base_unit , :length_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#meter_per_spuare_second
+
+:meter_per_spuare_second a owl:NamedIndividual , :acceleration_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#micro
+
+:micro a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#microgram
+
+:microgram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#microsecond
+
+:microsecond a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#milli
+
+:milli a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#milligram
+
+:milligram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#millimeter
+
+:millimeter a owl:NamedIndividual , :length_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#millimeter_of_mercury
+
+:millimeter_of_mercury a owl:NamedIndividual , :pressure_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#millisecond
+
+:millisecond a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#minute
+
+:minute a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#mole
+
+:mole a owl:NamedIndividual , :base_unit , :substance_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#month
+
+:month a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#nano
+
+:nano a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#nanogram
+
+:nanogram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#nanosecond
+
+:nanosecond a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#newton
+
+:newton a owl:NamedIndividual , :force_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#pascal
+
+:pascal a owl:NamedIndividual , :pressure_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#peta
+
+:peta a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#picogram
+
+:picogram a owl:NamedIndividual , :mass_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#picosecond
+
+:picosecond a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#radian
+
+:radian a owl:NamedIndividual , :plane_angle_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#radian_per_second
+
+:radian_per_second a owl:NamedIndividual , :angular_velocity_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#radian_per_square_second
+
+:radian_per_square_second a owl:NamedIndividual , :angular_acceleration_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#second
+
+:second a owl:NamedIndividual , :base_unit , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#square_angstrom
+
+:square_angstrom a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#square_centimeter
+
+:square_centimeter a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#square_kilometer
+
+:square_kilometer a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#square_meter
+
+:square_meter a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#square_millimeter
+
+:square_millimeter a owl:NamedIndividual , :area_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#steradian
+
+:steradian a owl:NamedIndividual , :solid_angle_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#terabyte
+
+:terabyte a owl:NamedIndividual , :information_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#terra
+
+:terra a owl:NamedIndividual , :SI_prefix .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#turns_per_second
+
+:turns_per_second a owl:NamedIndividual , :rotation_frequency_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#watt
+
+:watt a owl:NamedIndividual , :power_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#week
+
+:week a owl:NamedIndividual , :time_unit .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#year
+
+:year a owl:NamedIndividual , :time_unit .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

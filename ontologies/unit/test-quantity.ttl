@@ -1,0 +1,249 @@
+@prefix : <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl> a owl:Ontology ;
+	owl:imports <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl> , <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#acceleration_quantified_in
+
+:acceleration_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :acceleration_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#acceleration_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#angle_quantified_in
+
+:angle_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :area_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#angle_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#area_quantified_in
+
+:area_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :area_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#area_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#electrical_current_quantified_in
+
+:electrical_current_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :electrical_current_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#eletric_current_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#force_quantified_in
+
+:force_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :force_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#force_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#length_quantified_in
+
+:length_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :length_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#length_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#mass_quantified_in
+
+:mass_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :mass_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#mass_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#pressure_quantified_in
+
+:pressure_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :pressure_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#pressure_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#quantified_in
+
+:quantified_in a owl:ObjectProperty ;
+	rdfs:domain :quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#temperature_quantified_in
+
+:temperature_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :temperatur_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#temperature_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#time_quantified_in
+
+:time_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :time_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#time_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#volume_quantified_in
+
+:volume_quantified_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf :quantified_in ;
+	rdfs:domain :volumentric_quantity ;
+	rdfs:range <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/unit/ontology.ttl#volume_unit> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#acceleration
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#acceleration> rdfs:range :acceleration_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#angle
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#angle> rdfs:range :angular_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#area
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#area> rdfs:range :area_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#diagonal
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#diagonal> rdfs:range :length_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#duration
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#duration> rdfs:range :time_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#electrical_current
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#electrical_current> rdfs:range :electrical_current_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#force
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#force> rdfs:range :force_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#hight
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#hight> rdfs:range :length_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#length
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#length> rdfs:range :length_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#mass
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#mass> rdfs:range :mass_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#periode
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#periode> rdfs:range :time_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#pressure
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#pressure> rdfs:range :pressure_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#radius
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#radius> rdfs:range :length_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#temperatur
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#temperatur> rdfs:range :length_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#volume
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#volume> rdfs:range :volumentric_quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#width
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#width> rdfs:range :length_quantity .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#value
+
+:value a owl:DatatypeProperty ;
+	rdfs:domain :quantity ;
+	rdfs:range xsd:double .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#acceleration_quantity
+
+:acceleration_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#angular_quantity
+
+:angular_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#area_quantity
+
+:area_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#electrical_current_quantity
+
+:electrical_current_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#force_quantity
+
+:force_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#length_quantity
+
+:length_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#mass_quantity
+
+:mass_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#pressure_quantity
+
+:pressure_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#quantity
+
+:quantity a owl:Class .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#temperatur_quantity
+
+:temperatur_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#time_quantity
+
+:time_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/quantity/ontology.ttl#volumentric_quantity
+
+:volumentric_quantity a owl:Class ;
+	rdfs:subClassOf :quantity .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

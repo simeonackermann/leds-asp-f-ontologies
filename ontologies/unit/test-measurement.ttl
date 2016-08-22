@@ -1,0 +1,233 @@
+@prefix : <https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#acceleration
+
+:acceleration a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#angle
+
+:angle a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#area
+
+:area a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#diagonal
+
+:diagonal a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#duration
+
+:duration a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#electrical_current
+
+:electrical_current a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#force
+
+:force a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#hight
+
+:hight a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#length
+
+:length a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#mass
+
+:mass a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#periode
+
+:periode a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#pressure
+
+:pressure a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#radius
+
+:radius a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#temperatur
+
+:temperatur a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#volume
+
+:volume a owl:ObjectProperty .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#width
+
+:width a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement
+
+<http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> ;
+	rdfs:comment "length measurement describes a distance."@en .
+# 
+# http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement
+
+<http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> a owl:Class ;
+	rdfs:comment "measurements are the dimensions of something."@en .
+# 
+# http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#time_measurement
+
+<http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#time_measurement> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#acceleration_measurement
+
+:acceleration_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> ;
+	rdfs:comment "acceleration measurement describles the strength of change in movement of something."@en .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#angular_measurement
+
+:angular_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> ;
+	rdfs:comment "angular measurement describles the angle between to things. The angle is the rate a which to things diverge starting at a point they intersect each other."@en .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#area_measurement
+
+:area_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> ;
+	rdfs:comment "area measurement describes the size of a two dimensional space."@en .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#electrical_current_measurement
+
+:electrical_current_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> ;
+	rdfs:comment "electrical current measurement describes the strength of a electrical current."@en .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#force_measurement
+
+:force_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#mass_measurement
+
+:mass_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#pressure_measurement
+
+:pressure_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#temperature_measurement
+
+:temperature_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#volumentric_measurement
+
+:volumentric_measurement a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#measurement> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#acceleration
+
+:acceleration a owl:NamedIndividual , :acceleration_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#angle
+
+:angle a owl:NamedIndividual , :angular_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#area
+
+:area a owl:NamedIndividual , :area_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#diagonal
+
+:diagonal a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#diameter
+
+:diameter a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#duration
+
+:duration a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#time_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#electrical_current
+
+:electrical_current a owl:NamedIndividual , :electrical_current_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#force
+
+:force a owl:NamedIndividual , :force_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#hight
+
+:hight a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#length
+
+:length a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#mass
+
+:mass a owl:NamedIndividual , :mass_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#periode
+
+:periode a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#time_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#pressure
+
+:pressure a owl:NamedIndividual , :pressure_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#radius
+
+:radius a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#temperatur
+
+:temperatur a owl:NamedIndividual , :temperature_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#volume
+
+:volume a owl:NamedIndividual , :volumentric_measurement .
+# 
+# https://github.com/AKSW/leds-asp-f-ontologies/blob/master/ontologies/test/measurement/ontology.ttl#width
+
+:width a owl:NamedIndividual , <http://www.semanticweb.org/koestnerfr/ontologies/2016/7/untitled-ontology-111#length_measurement> .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
