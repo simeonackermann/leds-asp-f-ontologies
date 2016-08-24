@@ -1,3 +1,4 @@
+
 # Elevator ontology
 
 It describes elevators inside or outside a building. Used classes and properties are very small in number to describe only neccessary facts.
@@ -12,30 +13,27 @@ The following diagram illustrates the structure of classes and related propertie
 
 ## Parts of the elevator structure
 
-- control panel
-- position display
-- well
-    + walls 
-        * guide rails
-    + headroom (ceiling)
-        * machine room
-    + pit (floor)
-        * buffer
-    + lighting, emergency lighting
-    + doors
-        * protection device (light barries)
-    + car
-        * max. load control
-        * walls
-        * ceiling
-        * floor
-        * doors
-            - protection device (light barries)
-        * lighting, emergency lighting
-        * air control
-        * control panel
-            - buttons for each level
-            - emergency call
-        * position display
-
-Sources: DIN EN 81-20 and DIN EN 81-70
+| Part | Features / Properties | Source |
+|------|------------------------|--------|
+| Control panel | max./min. height above floor | DIN 81-20, 5.12.1 and <br>DIN 81-70, 5.4.2.2 |
+| Position display | lighted | DIN 81-70, 5.4.2.4 |
+| Well (Elevator shaft) |  | DIN 81-20, 5.2 |
+| . Walls | width, depth | DIN 81-20, 5.2.5.2 |
+| . . Guide rails |  | DIN 81-20, 5.7 |
+| . Ceiling (headroom) |  |  |
+| . Floor (pit) |  |  |
+| . Buffer |  | DIN 81-20, 5.8 |
+| . Lighting, emergency lighting |  | DIN 81-20, 5.2.1.4 |
+| . Doors | min. clear open width | DIN 81-20, 5.3 |
+| . . Protection device | e.g. light barries  | DIN 81-20, 5.3.6 |
+| . Car (cabine) | max. load control (DIN 81-20, 5.12.1.2) | DIN 81-20, 5.4 |
+| . . Walls | width, depth, height |  |
+| . . Ceiling |  |  |
+| . . Doors | min. clear open width | DIN 81-20, 5.3 |
+| . . . Protection device | e.g. light barries | DIN 81-20, 5.3.6 |
+| . . Lighting, emergency lighting | min. luminosity | DIN 81-20, 5.4.10 |
+| . . Control panel | max./min. height above floor  | DIN 81-20, 5.12.1 and <br>DIN 81-20, table 4 |
+| . . . Buttons | each level, close/open door,  symbols, min. size, relief  | DIN 81-20, 5.12.1.1.2, and<br> DIN 81-70, 5.4 |
+| . . . . Emergency call | bell symbol | DIN 81-20, 5.12.3 |
+| . . Position display | lighted, max./min. height above floor | DIN 81-20, 5.12.1.1.3 |
+| . . Ventilation |  | DIN 81-20, 5.4.9 |
